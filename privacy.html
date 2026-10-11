@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1d2330; --bg: #f7f8fb; --muted: #5b6474; --line: #dde1ea; --accent: #2f6fde; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e6e9f0; --bg: #0f1217; --muted: #98a1b3; --line: #262c36; --accent: #8ab4ff; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 30px; margin: 0 0 4px; } h2 { font-size: 19px; margin-top: 32px; }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--accent); }
+  ul { padding-left: 22px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Jarvis personal assistant · effective 11 October 2026</p>
+
+  <h2>Who uses Jarvis</h2>
+  <p>Jarvis is a personal assistant used by a single person, its owner, on their own computer. It is not available to
+    the public. The only Google account it ever connects to is the owner's own.</p>
+
+  <h2>Google data Jarvis accesses</h2>
+  <ul>
+    <li><b>Google Calendar events</b> (<code>calendar.events</code>): to tell the owner what is planned and to add or
+      move events at the owner's request.</li>
+    <li><b>Gmail, read-only</b> (<code>gmail.readonly</code>): to list, search and read the owner's email when the owner
+      asks about it.</li>
+    <li><b>Gmail drafts</b> (<code>gmail.compose</code>): to create draft replies. Jarvis never sends email and never
+      deletes email or events.</li>
+  </ul>
+
+  <h2>How the data is handled</h2>
+  <ul>
+    <li>Data is fetched only when the owner asks a question that needs it, and is used only to answer that question.</li>
+    <li>The Google sign-in token is stored in a file on the owner's computer that only the owner's Windows account can
+      read. It is never put in the browser, in backups or in any public place.</li>
+    <li>To produce an answer, the relevant parts of calendar events or emails are sent to the Anthropic Claude API, the
+      language model that powers Jarvis. Data sent through the API is handled under
+      <a href="https://www.anthropic.com/legal/commercial-terms">Anthropic's commercial terms</a> and is not used to
+      train models.</li>
+    <li>Google data is not sold, not shared with anyone else, not used for advertising and not used to train any AI model.</li>
+    <li>Jarvis does not keep its own copy of the owner's email or calendar.</li>
+  </ul>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Jarvis's use and transfer of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    including the Limited Use requirements.</p>
+
+  <h2>Revoking access</h2>
+  <p>Access can be revoked at any time at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Jarvis then loses access
+    immediately.</p>
+
+  <footer><a href="index.html">Jarvis</a> · personal project</footer>
+</main>
+</body>
+</html>
